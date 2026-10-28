@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leve Fibra - Internet e Redes de Telecomunicações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00f5d4;
+            --secondary: #7b2cbf;
+            --dark: #0b0914;
+            --darker: #05040a;
+            --light: #ffffff;
+            --gray: #94a3b8;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: var(--darker);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--light);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: var(--light);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 245, 212, 0.3);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1c103b 0%, var(--dark) 70%);
+            margin-top: 60px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--light), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+        }
+
+        .services {
+            padding: 100px 50px;
+            background: var(--darker);
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 30px;
+            border-radius: 15px;
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .contact {
+            padding: 80px 20px;
+            text-align: center;
+            background: var(--dark);
+        }
+
+        .contact-box {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+
+        .contact-box h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+        .contact-info strong {
+            color: var(--light);
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--darker);
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            header {
+                padding: 20px;
+            }
+            .services {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">LEVE<span>FIBRA</span></div>
+        <a href="#contato" class="cta-btn">Atendimento</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Conexão Rápida, Estável e Sem Limites</h1>
+            <p>Levando o melhor da internet em fibra óptica e soluções avançadas de telecomunicações para Planaltina e região.</p>
+            <a href="#servicos" class="cta-btn" style="padding: 15px 35px; font-size: 1.1rem;">Nossos Serviços</a>
+        </div>
+    </section>
+
+    <section class="services" id="servicos">
+        <h2>O que Oferecemos</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Internet Fibra Óptica</h3>
+                <p>Navegue com ultra velocidade, estabilidade superior e sinal garantido para toda a sua casa ou empresa.</p>
+            </div>
+            <div class="service-card">
+                <h3>Redes de Telecomunicações</h3>
+                <p>Projetos de infraestrutura de redes robustos, eficientes e seguros estruturados sob medida.</p>
+            </div>
+            <div class="service-card">
+                <h3>Suporte Dedicado</h3>
+                <p>Atendimento ágil, humanizado e focado em solucionar suas necessidades com total rapidez.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="contact-box">
+            <h2>Fale Conosco</h2>
+            <div class="contact-info">
+                <p><strong>Razão Social:</strong> Leve Fibra Leve Internet e Redes de Telecomunicacoes LTDA</p>
+                <p><strong>CNPJ:</strong> 04.838.161/0001-00</p>
+                <p><strong>Endereço:</strong> Av. Independência, Quadras 12, Lote 01, Setor Tradicional (Planaltina)</p>
+                <p>Brasília - DF — CEP: 73330-001</p>
+                <p><strong>Telefone:</strong> <a href="tel:6130817003">(61) 3081-7003</a></p>
+                <p><strong>E-mail:</strong> <a href="mailto:carlina@levefibra.com.br">carlina@levefibra.com.br</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Leve Fibra Telecomunicações. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
